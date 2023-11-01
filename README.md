@@ -1,2 +1,2 @@
 # relax.github.io
-1st year project page
+project page
