@@ -6,7 +6,7 @@ ________________
 
 Memory Game
 Introduction
-Welcome to the Memory Game project! This is a console-based implementation of the classic memory card game. The objective of the game is to find matching pairs of cards by flipping them over two at a time.
+Welcome to the Memory Game project! This is a web-based implementation of the classic memory card game. The objective of the game is to find matching pairs of cards by flipping them over two at a time.
 
 This project is designed to provide an interactive and enjoyable way to play the Memory Game.
 This is a simple implementation of the classic Memory game written in HTML for structure, JavaScript for functionality, and CSS for styling.
