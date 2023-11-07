@@ -19,7 +19,7 @@
             <form method="post" action="feedback.php" onsubmit="return submitfunc();" >
                 
                 <div class="review1">
-                    <label for="game-rating">How was the experience with the games?</label><br>
+                    <label for="game-rating">How was the gaming experience?</label><br>
                     <input name="game-rating" type="number" hidden>
                     <span class="fa fa-star 1" onclick="check11()"></span>
                     <span class="fa fa-star 1" onclick="check12()"></span>
@@ -71,7 +71,7 @@
     }
 
     #errormsg{
-        font-size: 5px;
+        font-size: 4px;
         display: none;
         position: absolute;
         color: red;
@@ -226,7 +226,7 @@
     }
 
     function yourfunc(){
-        document.getElementById("nameinput").placeholder="Enter your name";
+        document.getElementById("nameinput").placeholder="Enter your name:";
         document.getElementById("namebox").style.display="none";
     }
 
