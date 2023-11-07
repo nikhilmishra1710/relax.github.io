@@ -1,7 +1,7 @@
 
 let i = 0;
 let txt = 'Rock, Paper, Scissors?';
-let speed = 50;
+let speed = 55;
 
 function typeWriter() {
     if (i < txt.length) {
@@ -131,7 +131,7 @@ function gameSelectionListener(event) {
 
 
 function computerPlay() {
-    randomGameValue = Math.floor(Math.random() * 3);
+    randomGameValue = Math.floor(Math.random() * 3.0);
     if (randomGameValue == "0") {
         return "rock";
     }
