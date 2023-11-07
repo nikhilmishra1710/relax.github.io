@@ -18,7 +18,6 @@ let imagesrc={
 }
 
 var character,score=0;
-let current_audio=new Audio()
 
 function startgame(){
     selectors.score=document.querySelector(".score")
@@ -35,7 +34,7 @@ function startgame(){
 }
 
 function start(){
-    
+    let current_audio=new Audio()
     basic.right=0;basic.wrong=0
     var words=["car", "bicycle", "train", "helicopter", "boat","pen", "pencil", "notebook", "marker", "eraser","keyboard", "mouse", "monitor", "laptop", "printer","elephant", "giraffe", "tiger", "monkey", "lion","doctor", "teacher", "engineer", "pilot", "chef","sun", "rain", "mountain", "cloud", "lightning","paleontology","vase","nebulous","entomolgy","onomatopoia","selenocentric","smilingbuddha","vaticancity","madurai"]
     var hint=new Array(5).fill("MODE OF TRANSPORT").concat(new Array(5).fill("STATIONERY").concat(new Array(5).fill("COMPUTER PERIPHERALS").concat(new Array(5).fill("ANIMAL").concat(new Array(5).fill("PROFESSION").concat(new Array(5).fill("PART OF NATURE"))))))
@@ -68,10 +67,10 @@ function check(character){
         else
             right(character)
     }
-    console.log(basic)
 }
 
 function right(character){
+    let current_audio=new Audio()
     current_audio.src=audiosrc.correct
     current_audio.play()
     for(let i=0;i<basic.len;i++){      
@@ -95,6 +94,7 @@ function right(character){
 }
 
 function wrong(character){
+    let current_audio=new Audio()
     basic.wrong++
     console.log("Wrong: "+basic.wrong)
     current_audio.src=audiosrc.wrong
