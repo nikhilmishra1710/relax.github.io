@@ -39,4 +39,16 @@ This is a simple Rock, Paper, Scissors game implemented in JavaScript. It allows
 
 2. Open the `index.html` file in a web browser.
 
-Feel free to customize this README file to suit your specific implementation and project details. Make sure to replace placeholders like "Your Name" and "link-to-demo" with your own information and URLs.
+
+## Contact
+If you have any questions or need assistance, feel free to contact the project owner:
+
+Nikhil Mishra, Priyanshu Gupta, Saurav Sharma, Banihin WB Syiem
+Email: bt22cse190@iiitn.ac.in, bt22cse186@iiitn.ac.in, bt22cse188@iiitn.ac.in, bt22cse187@iiitn.ac.in
+GitHub: https://github.com/OsauravO
+
+
+## Acknowledgments
+Special thanks to anyone who contributed to this project.
+The Hangman game concept is a timeless classic. Enjoy playing and learning from it!
+Thank you for using the Hangman Game project. Have fun playing, learning, and contributing!
