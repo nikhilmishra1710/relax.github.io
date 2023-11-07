@@ -73,6 +73,9 @@ function right(character){
     let current_audio=new Audio()
     current_audio.src=audiosrc.correct
     current_audio.play()
+    var change_img="#img_"+character
+    var img=document.querySelector(change_img)
+    img.src="./Hangman/Images/correct.svg"
     for(let i=0;i<basic.len;i++){      
         console.log(i) 
         if(basic.word[i]===character){
@@ -96,7 +99,6 @@ function right(character){
 function wrong(character){
     let current_audio=new Audio()
     basic.wrong++
-    console.log("Wrong: "+basic.wrong)
     current_audio.src=audiosrc.wrong
     current_audio.play()
     var change_img="#img_"+character
