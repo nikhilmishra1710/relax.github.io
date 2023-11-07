@@ -35,8 +35,18 @@ This is a simple project, but contributions are welcome. If you have any ideas f
 
 ## License
 This Etch A Sketch game is open-source and available under the MIT License. See the `LICENSE` file for details.
+## Contact
+If you have any questions or need assistance, feel free to contact the project owner:
 
+Nikhil Mishra, Priyanshu Gupta, Saurav Sharma, Banihin WB Syiem
+Email: bt22cse190@iiitn.ac.in, bt22cse186@iiitn.ac.in, bt22cse188@iiitn.ac.in, bt22cse187@iiitn.ac.in
+GitHub: https://github.com/OsauravO
+
+_____________________
 ## Acknowledgments
+Special thanks to anyone who contributed to this project.
+The Hangman game concept is a timeless classic. Enjoy playing and learning from it!
+Thank you for using the Hangman Game project. Have fun playing, learning, and contributing!
 - This game was inspired by the classic Etch A Sketch toy.
 - Built using HTML, CSS, and JavaScript.
 
