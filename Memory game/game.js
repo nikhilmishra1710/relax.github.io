@@ -1,7 +1,4 @@
-var easy=['😂','🥳','👍','😊','🤣','😁']
-var medium=['😱','🫡','🤔','😂','🤣','😁','😀','😅','😎','🥱','😪','😕']
-var hard=['🍕','🍔','🍟','🌭','🥞','🎉','🎁','🛺','🚎','🚑','🚘','🌍','🤣','😋','🤗','🏍️','🏎️','🎡','⚾','🎳']
-var temp=0
+var easy,medium,hard,temp=0
 
 const basic={
     flip: 0,totalflip: 0,start: 0,timevar: 0,win: 0,difficulty: 0,timer: 0,array: 0
@@ -14,7 +11,12 @@ audiosrc={
     correct: "./Memory game/Audio/correct.mp3",
     win: "./Memory game/Audio/win.mp3"
 }
+
 window.onload=()=>{
+    easy=['😂','🥳','👍','😊','🤣','😁']
+    medium=['😱','🫡','🤔','😂','🤣','😁','😀','😅','😎','🥱','😪','😕']
+    hard=['🍕','🍔','🍟','🌭','🥞','🎉','🎁','🛺','🚎','🚑','🚘','🌍','🤣','😋','🤗','🏍️','🏎️','🎡','⚾','🎳']
+    temp=0
     selectors.timeupdate=document.querySelector('.time')
     selectors.flipupdate=document.querySelector('.flips')
     selectors.main_display=document.querySelector('.main_display')
@@ -23,7 +25,7 @@ window.onload=()=>{
 }
 
 function startgame(temp){
-    console.log(basic)
+    
     if(temp===1){
         basic.array=shuffle(easy).concat(shuffle(easy))
         selectors.lower.style="grid-template-columns:repeat(4,auto);height: 60vh;width: 40vw;"
@@ -101,7 +103,6 @@ const flipcard=card=>{
             selected[0].classList.add('matched');
             selected[1].classList.add('matched');
             basic.win++;
-            alert(basic.win);
         }
         if(basic.win===basic.array.length/2){
             sound.src=audiosrc.win
