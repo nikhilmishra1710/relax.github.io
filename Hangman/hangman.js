@@ -1,12 +1,9 @@
-
 const basic={
     donechar: " "
 };
 let selectors={
     
 };
-
-
 
 let audiosrc={
     start_game:"./Hangman/Audio/game-start.mp3",
@@ -40,15 +37,14 @@ function startgame(){
 function start(){
     
     basic.right=0;basic.wrong=0
-    var words=["car", "bicycle", "train", "helicopter", "boat","pen", "pencil", "notebook", "marker", "eraser","keyboard", "mouse", "monitor", "laptop", "printer","elephant", "giraffe", "tiger", "monkey", "lion","doctor", "teacher", "engineer", "pilot", "chef","sun", "rain", "mountain", "cloud", "lightning"]
+    var words=["car", "bicycle", "train", "helicopter", "boat","pen", "pencil", "notebook", "marker", "eraser","keyboard", "mouse", "monitor", "laptop", "printer","elephant", "giraffe", "tiger", "monkey", "lion","doctor", "teacher", "engineer", "pilot", "chef","sun", "rain", "mountain", "cloud", "lightning","paleontology","vase","nebulous","entomolgy","onomatopoia","selenocentric","smilingbuddha","vaticancity","madurai"]
     var hint=new Array(5).fill("MODE OF TRANSPORT").concat(new Array(5).fill("STATIONERY").concat(new Array(5).fill("COMPUTER PERIPHERALS").concat(new Array(5).fill("ANIMAL").concat(new Array(5).fill("PROFESSION").concat(new Array(5).fill("PART OF NATURE"))))))
+    hint=hint.concat(["STUDY OF FOSSIL","HOUSEHOLD ITEMS","ADJ: UNCLEAR,HAZY","STUDY OF INSECTS","LITERARY DEVICE","PERSPECTIVE CENTERED ON MOON","FIRST POKHRAN TEST","SMALLEST COUNTRY",
+    "ATHENS OF EAST"])
+
     var pos=(Math.floor(Math.random()*100)+1)%words.length
     basic.word=words[pos]
     basic.len=basic.word.length
-    console.log(words)
-    console.log(hint)
-    console.log(basic)
-    console.log(selectors)
     for(var i=0;i<basic.len;i++){
         var field=document.createElement('input');
         field.type="text"
