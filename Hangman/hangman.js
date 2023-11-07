@@ -75,7 +75,10 @@ function right(character){
     current_audio.play()
     var change_img="#img_"+character
     var img=document.querySelector(change_img)
-    img.src="./Hangman/Images/correct.svg"
+    img.src="Hangman/Images/correct.svg"
+    var button=document.querySelector('#'+character)
+    button.style.display="none"
+    img.style.display="block"
     for(let i=0;i<basic.len;i++){      
         console.log(i) 
         if(basic.word[i]===character){
