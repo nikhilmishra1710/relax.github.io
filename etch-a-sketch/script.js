@@ -1,6 +1,6 @@
 const DEFAULT_COLOR = '#333333'
 const DEFAULT_MODE = 'color'
-const DEFAULT_SIZE = 16
+const DEFAULT_SIZE = 20
 
 let currentColor = DEFAULT_COLOR
 let currentMode = DEFAULT_MODE
