@@ -6,7 +6,7 @@ var selectedindex2=0;
 
 const rotatefn='rotateY'
 const rotatefn2='rotateX'
-const theta2=60;
+const theta2=51.4;
 
 
 function rotatecarousel(){
