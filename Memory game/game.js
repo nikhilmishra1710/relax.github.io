@@ -44,7 +44,7 @@ function startgame(temp){
     selectors.lower.innerHTML=card
     selectors.lower.removeChild(selectors.lower.firstChild)
     selectors.main_display.style.display="none"
-    selectors.play_area.style.display="block"
+    selectors.play_area.style.display="flex"
     document.addEventListener('click',event=>{
     
         const trigger=event.target;
