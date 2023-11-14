@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 35s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+canvas {
+    display:block;
+    margin: 40px auto 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: transparent;
+    display: block;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px white;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration:none;
+}
